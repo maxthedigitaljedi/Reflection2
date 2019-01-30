@@ -1,0 +1,240 @@
+.hamburgericonmenuwrapper{
+	/* z-index: 1000; */
+	position: relative;
+  font-size: 16px; /* base font size for em values below */
+}
+
+/* ###### CSS for Hamburger UI DIV and links ###### */
+
+.hamburgerui{
+	overflow: hidden;
+  position: fixed;
+  right: 0;
+  top: 0;
+}
+
+.hamburgerui ul{
+	margin: 0;
+	padding: 0;
+	font: normal 16px 'Poppins', sans-serif; /* .hamburgerui font size (Bitter is Google font) */
+	list-style-type: none;
+}
+
+.hamburgerui li{
+	display: inline;
+	margin: 0;
+}
+
+.hamburgerui li a{
+	float: left;
+	display: block;
+  position: relative;
+	text-decoration: none;
+	margin: 0;
+	padding: 25px 30px; /*padding inside each link */
+	color: white;
+  outline: none;
+	background: darkred; /*background of tabs (default state)*/
+	-webkit-transition: all 0.5s;
+	transition: all 0.5s;
+}
+
+.hamburgerui li:last-of-type a{
+  width: 35px; /* width of last LI A containing hamburger style icon */
+  
+}
+
+.hamburgerui li:last-of-type a:after{
+  content: 'Menu';
+  visibility: hidden;
+}
+
+.hamburgerui li a:visited{
+	color: white;
+}
+
+.hamburgerui li a:hover{
+	background: red; /*background of UI links for hover state  */
+}
+
+
+.navtoggler{  /* Main hamburger icon to toggle menu state */
+  display: block;
+  position: absolute;
+  top: 35%;
+  left: 50%;
+  font-size: 8px; /* change font size to change hamburger icon dimensions. Leave width/height below alone */
+  width: 4em;
+  height: 2.5em;
+  padding: 0;
+  text-indent: -1000px;
+  border: 0.3em solid white;
+  /* border color */
+  border-width: 0.6em 0;
+  cursor: pointer;
+  -webkit-transform: translate3D(-50%, -50%, 0);
+  transform: translate3D(-50%, -35%, 0); /* center hamburger icon inside link */
+  -webkit-transition: all 0.3s ease-in;
+  transition: all 0.3s ease-in;
+}
+
+
+.navtoggler::before, .navtoggler::after{
+  /* inner strip inside hamburger icon */
+  content: "";
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 0.6em;
+  top: 50%;
+  margin-top: -0.3em;
+  left: 0;
+  background: white; /* stripes background color. Change to match border color of parent label above */
+  -webkit-transition: all 0.3s ease-in;
+  transition: all 0.3s ease-in;
+}
+
+
+/* ###### CSS for Full Screen Menu NAV ###### */
+
+#fullscreenmenu{
+  width: 275px;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  right: 0;
+  background: #333645; /* background color of full screen menu */
+	padding-top: 80px; /* shift UL downwards by 100px so it's not obscured by hamburger icon */
+  z-index: 1;
+	visibility: hidden;
+	overflow: auto;
+  font-family: 'Poppins', sans-serif; /* 'Bitter' is Google font */
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-transform: translate3D(0, -100%, 0); /* hide menu initially on screen by offsetting it horizontally */
+  transform: translate3D(100%, 0, 0); 
+  -webkit-transition: -webkit-transform 0.5s, visibility 0s 0.5s;
+  transition: transform 0.5s, visibility 0s 0.5s;
+}
+
+#fullscreenmenu ul{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	width: calc(275px - 2rem);
+  position: relative;
+  font-weight: normal;
+  font-size: 1.125rem; /* font size of UL menu */
+  text-transform: uppercase;
+  -webkit-transform: translate3D(0, -40px, 0);
+  transform: translate3D(0, -40px, 0);
+  opacity: 0;
+  transition: all 0.5s 0.4s;
+}
+
+#fullscreenmenu ul li{
+	width: 100%; /* by default, show 2 columns of links */
+	float: left;
+	display: inline;
+  text-align: center;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	margin-bottom: 8px; /* bottom spacing between LI */
+}
+
+#fullscreenmenu ul li a{
+  text-decoration: none;
+  position: relative;
+  color: white; /* link color */
+	padding: 25px; /* general spacing between links */
+  display: block;
+  -webkit-transition: background 0.3s;
+  transition: background 0.3s;
+}
+
+
+#fullscreenmenu ul li a:hover{
+  background: darkred;
+}
+
+#fullscreenmenu ul li a:hover:after{
+  width: 100%;
+}
+
+/* #### Menu Hamburger Icon UI when shrinked CSS ######## */
+
+.hamburgerui.shrink li:nth-last-of-type(n+2) a{
+  opacity: 0;
+  pointer-events: none;
+}
+
+
+
+/* #### Menu Opened State CSS ######## */
+
+.hamburgericonmenuwrapper.open #fullscreenmenu{
+	visibility: visible;
+  -webkit-transform: translate3D(0, 0, 0); /* show menu by shifting it vertically to visible position within container */
+  transform: translate3D(0, 0, 0);
+  -webkit-transition: -webkit-transform 0.5s;
+  transition: transform 0.5s;
+}
+
+.hamburgericonmenuwrapper.open .navtoggler{
+  border-width: 0;
+}
+
+.hamburgericonmenuwrapper.open .navtoggler::before{
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg); /* rotate line to create "x" */
+}
+
+.hamburgericonmenuwrapper.open .navtoggler::after{
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg); /* rotate line to create "x" */
+}
+
+.hamburgericonmenuwrapper.open .hamburgerui li:nth-last-of-type(n+2) a{
+  opacity: 0;
+  pointer-events: none;
+}
+
+.hamburgericonmenuwrapper.open #fullscreenmenu ul{
+  opacity: 1;
+  -webkit-transform: translate3D(0, 0, 0);
+  transform: translate3D(0, 0, 0); /* restore UL to original positon */
+}
+
+
+/* ####### responsive layout CSS ####### */
+
+@media (max-width: 800px) { /* 1st breaking point */
+
+	.hamburgerui li a{
+		padding: 25px; /*padding inside each link */
+  }
+
+  #fullscreenmenu ul{
+    font-size: 2em;
+  }
+
+}
+
+@media (max-width: 600px) { /* 2nd breaking point */
+
+	.hamburgerui li a{
+		padding: 20px; /*padding inside each link */
+	}
+
+  #fullscreenmenu ul{
+    font-size: 1.5em;
+  }
+}
+
+@media (max-width: 480px) { /* 3rd breaking point */
+  #fullscreenmenu ul{
+    font-size: 1em;
+  }
+}
