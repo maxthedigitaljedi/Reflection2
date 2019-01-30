@@ -1,0 +1,321 @@
+
+
+/** Media queries **/
+
+/* Small devices (landscape phones, 460px and up)*/
+@media (min-width: 460px) { 
+    .main-banner-info p br{
+        display: none;
+    }
+
+    .container-sidebar {
+        width: 258px;
+    }
+}
+
+/* Medium devices (tablets, 768px and up)*/
+@media (min-width: 768px) { 
+    
+    .width720 {
+        width: 720px;
+        padding: 0;    
+    }
+
+    .container-secondary-header {
+        width: 720px;
+        padding: 0;    
+    }
+
+    .btn-phone {
+        display: flex;
+    }
+
+    .container-tertiary-content-main-departments {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .latest-h1-span,
+    .latest-hr-span {
+        width: 100%;
+    }
+
+    .dept-card,
+    .latest-article,
+    .fp-item {
+        width: 345px;
+    }
+
+    .dept-card-content {
+        height: 312px;
+    }
+    
+    #dept-card-telecoms,
+    #dept-card-bespoke {
+        height: 290px;
+    }
+
+    .latest-article {
+        height: 584px;
+    }
+
+    #container-latest-articles {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    #latest-article-cm {
+        display: none;
+    }
+
+    .latest-article-tooltip {
+        padding: 15px 30px;
+    }
+
+    .latest-article-tooltip br {
+        display: none;
+    }
+
+    .container-tertiary-content-main-clients {
+        display: flex;
+    }
+
+    .footer-section-contacts {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-start;
+        flex-wrap: wrap;
+    }
+
+    #footer-tertiary-footer-accreditations {
+        display: flex;
+    } 
+}
+
+/* Large devices (desktops, 992px and up)*/
+@media (min-width: 992px) { 
+    
+    .width940 {
+        width: 940px;
+        padding: 0;    
+    }
+
+    .container-secondary-header {
+        width: 940px;
+        padding: 0;    
+    }
+    
+    .container-secondary-nav-main {
+        display: flex;        
+    }
+
+    .btn-header-support,
+    .btn-header-contact {
+        display: flex;
+    } 
+
+    .btn-phone {
+        display: none;
+    }
+    
+    #container-tertiary-content-main-banner {
+        min-height: 489px;
+        max-height: calc(100vh - 209px);
+        background-image: linear-gradient( to right, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.4) 20%, rgba(0, 0, 0, 0.2) 50%,rgba(0, 0, 0, 0) );
+    }
+
+    .main-banner-info {
+        align-items: flex-start;
+    }
+
+    .main-banner-info h1,
+    .main-banner-info p {
+        text-align: left;
+    }
+
+    .dept-card,
+    .latest-article,
+    .fp-item {
+        width: 455px;
+    }
+
+    .dept-card-content {
+        height: 290px;
+    }
+
+    .latest-article-img:hover {
+        transform: scale(1.1);
+    }
+
+    #container-tertiary-content-main-background { 
+        background-image: url("https://www.netmatters.co.uk/assets/images/branded.png"); 
+        background-repeat: no-repeat;
+        background-position: right center;
+        background-size: auto 100%;
+    }
+    
+    #client-list {
+        height: 63px;
+        margin-top: 50px;
+    }
+
+    .client-logo {
+        transform: scale(1.395);
+        transform-origin: 62% top;
+    }
+
+    .client-tooltip {
+        margin-bottom: 113px;
+     }
+
+    .fs-item {
+        width: 196px;
+    }
+    
+    .fs-accreditations {
+        height: 110px;
+    }
+    
+    #fs-microsoft {
+        height: 85px;
+        width: 140px;
+    }
+    
+    #fs-future50 {
+        height: 110px;
+        width: 69px;
+    }
+    
+    #fs-qms {
+        height: 99px;
+        width: 85px;
+    }
+    
+    #fs-carbon {
+        height: 80px;
+        width: 200px;
+    }
+
+    .narrow-menu {
+        display: flex;
+    }
+
+    .container-sidebar {
+        width: 333px;
+    }
+
+    .container-sidebar-float {
+        top: 209px;
+        height: calc(100% - 209px );
+    }
+}
+
+/* Extra large devices (large desktops, 1200px and up)*/
+@media (min-width: 1260px) { 
+    
+    .width1170 {
+        width: 1170px;
+    }
+
+    .container-secondary-header,
+    .nav-main-block,
+    .nav-main-sub {
+        width: 1170px;
+    }
+
+    .nav-main-sub a {
+        font-size: 1rem;
+    }
+
+    .menu-filler {
+        padding: 0 2rem;
+    }
+
+    .dept-card:nth-child(-n+2) {
+        width: 570px; /* top row wider cards */
+    }
+
+    .dept-card:nth-child(n+3) {
+        width: 270px; /* bottom row narrow cards */
+    }
+
+    #dept-card-telecoms,
+    #dept-card-bespoke,
+    #dept-card-digital,
+    #dept-card-security {
+        height: 312px;
+    }
+
+    .container-tertiary-content-main-departments {
+        justify-content: space-between;
+    }
+
+    #latest-article-cm {
+        display: flex;
+    }
+
+    .latest-article {
+        width: 370px;
+        height: 584px;
+    }
+
+    .main-content-background-info p{
+        width: 50%;
+    }
+
+    #client-list {
+        height: 70px;
+    }
+
+    .container-tertiary-content-main-clients {
+        height: 170px;
+    }
+
+    .client-logo {
+        transform: scale(1.55);
+    }
+
+    .client-tooltip {
+        margin-bottom: 120px;
+     }
+
+    #container-tertiary-footer-contacts {
+        height: 309px;
+        align-items: flex-start;
+    }
+
+    .fp-item {
+        width: 300px;
+    }
+
+    #fp-social {
+        width: 270px; /* social media 270px */
+    }
+
+    .fs-accreditations {
+        height: 88px;
+    }
+
+    #fs-microsoft {
+        height: 70px;
+        width: 115px;
+    }
+    
+    #fs-future50 {
+        height: 70px;
+        width: 44px;
+    }
+    
+    #fs-qms {
+        height: 70px;
+        width: 60px;
+    }
+    
+    #fs-carbon {
+        height: 70px;
+        width: 175px;
+    }
+
+}
+

@@ -1,0 +1,116 @@
+/* Large devices (desktops, 992px and up)*/
+    
+    .container-secondary-header {
+        width: 940px;
+        padding: 0;    
+    }
+
+    .container-secondary-nav-main {
+        display: flex;        
+    }
+
+    .btn-header-support,
+    .btn-header-contact {
+        display: flex;
+    } 
+
+    .container-sidebar {
+        width: 333px;
+    }
+
+    .width940 {
+        width: 940px;
+        padding: 0;    
+    }
+
+    #container-tertiary-content-main-banner {
+        min-height: 489px;
+        max-height: calc(100vh - 209px);
+        background-image: linear-gradient( to right, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.4) 20%, rgba(0, 0, 0, 0.2) 50%,rgba(0, 0, 0, 0) );
+    }
+
+    .main-banner-info {
+        align-items: flex-start;
+    }
+
+    .main-banner-info h1,
+    .main-banner-info p {
+        text-align: left;
+    }
+
+    .dept-card,
+    .latest-article,
+    .fp-item {
+        width: 455px;
+    }
+
+    .dept-card-content {
+        height: 290px;
+    }
+
+    .latest-article-img:hover {
+        transform: scale(1.1);
+    }
+
+    #container-tertiary-content-main-background { 
+        background-image: url("https://www.netmatters.co.uk/assets/images/branded.png"); 
+        background-repeat: no-repeat;
+        background-position: right center;
+        background-size: auto 100%;
+    }
+    
+    #client-list {
+        height: 63px;
+        margin-top: 50px;
+    }
+
+    .client-logo {
+        transform: scale(1.395);
+        transform-origin: 62% top;
+    }
+
+    .client-tooltip {
+        margin-bottom: 113px;
+     }
+
+    .fs-item {
+        width: 196px;
+    }
+    
+    .fs-accreditations {
+        height: 110px;
+    }
+    
+    #fs-microsoft {
+        height: 85px;
+        width: 140px;
+    }
+    
+    #fs-future50 {
+        height: 110px;
+        width: 69px;
+    }
+    
+    #fs-qms {
+        height: 99px;
+        width: 85px;
+    }
+    
+    #fs-carbon {
+        height: 80px;
+        width: 200px;
+    }
+
+    .narrow-menu {
+        display: none;
+    }
+
+    .btn-phone {
+        display: none;
+    }
+    
+
+
+
+
+

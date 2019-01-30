@@ -1,0 +1,79 @@
+/* Medium devices (tablets, 768px and up)*/
+    
+    .width720 {
+        width: 720px;
+        padding: 0;    
+    }
+
+    .container-secondary-header {
+        width: 720px;
+        padding: 0;    
+    }
+
+    .container-tertiary-content-main-departments {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .latest-h1-span,
+    .latest-hr-span {
+        width: 100%;
+    }
+
+    .dept-card,
+    .latest-article,
+    .fp-item {
+        width: 345px;
+    }
+
+    .dept-card-content {
+        height: 312px;
+    }
+    
+    #dept-card-telecoms,
+    #dept-card-bespoke {
+        height: 290px;
+    }
+
+    .latest-article {
+        height: 584px;
+    }
+
+    #container-latest-articles {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .main-content-background-info h1 {
+        font-size: 2.25rem;
+    }
+
+    #latest-article-cm {
+        display: none;
+    }
+
+    .latest-article-tooltip {
+        padding: 15px 30px;
+    }
+
+    .latest-article-tooltip br {
+        display: none;
+    }
+
+    .container-tertiary-content-main-clients {
+        display: flex;
+    }
+
+    .footer-section-contacts {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-start;
+        flex-wrap: wrap;
+    }
+
+    #footer-tertiary-footer-accreditations {
+        display: flex;
+    } 
+
+

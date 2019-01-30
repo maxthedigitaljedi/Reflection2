@@ -1,0 +1,105 @@
+/* Extra large devices (large desktops, 1200px and up)*/
+    
+    .container-secondary-header,
+    .nav-main-block,
+    .nav-main-sub {
+        width: 1170px;
+    }
+
+    .nav-main-sub a {
+        font-size: 1rem;
+    }
+
+    .width1170 {
+        width: 1170px;
+    }
+
+    .menu-filler {
+        padding: 0 2rem;
+    }
+
+    .dept-card:nth-child(-n+2) {
+        width: 570px; /* top row wider cards */
+    }
+
+    .dept-card:nth-child(n+3) {
+        width: 270px; /* bottom row narrow cards */
+    }
+
+    #dept-card-telecoms,
+    #dept-card-bespoke,
+    #dept-card-digital,
+    #dept-card-security {
+        height: 312px;
+    }
+
+    .container-tertiary-content-main-departments {
+        justify-content: space-between;
+    }
+
+    #latest-article-cm {
+        display: flex;
+    }
+
+    .latest-article {
+        width: 370px;
+        height: 584px;
+    }
+
+    .main-content-background-info p{
+        width: 50%;
+    }
+
+    #client-list {
+        height: 70px;
+    }
+
+    .container-tertiary-content-main-clients {
+        height: 170px;
+    }
+
+    .client-logo {
+        transform: scale(1.55);
+    }
+
+    .client-tooltip {
+        margin-bottom: 120px;
+     }
+
+    #container-tertiary-footer-contacts {
+        height: 309px;
+        align-items: flex-start;
+    }
+
+    .fp-item {
+        width: 300px;
+    }
+
+    #fp-social {
+        width: 270px; /* social media 270px */
+    }
+
+    .fs-accreditations {
+        height: 88px;
+    }
+
+    #fs-microsoft {
+        height: 70px;
+        width: 115px;
+    }
+    
+    #fs-future50 {
+        height: 70px;
+        width: 44px;
+    }
+    
+    #fs-qms {
+        height: 70px;
+        width: 60px;
+    }
+    
+    #fs-carbon {
+        height: 70px;
+        width: 175px;
+    }
+

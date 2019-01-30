@@ -1,0 +1,32 @@
+/* Small devices (landscape phones, 460px and up)*/
+    .main-banner-info p br{
+        display: none;
+    }
+
+    .latest-article-author {
+        height: 100px;
+        flex-grow: 0;
+     }
+    
+    .latest-article-author-img {
+        display: block;
+    }
+       
+    .container-sidebar {
+        width: 258px;
+    }
+    
+    .container-sidebar-float {
+        /* top: 209px;
+        height: calc(100% - 209px ); */
+        top: 0px;
+        height: 100%;
+    }
+
+    .btn-phone {
+        display: flex;
+    }
+
+
+
+
